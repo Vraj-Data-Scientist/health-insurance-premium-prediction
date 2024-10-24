@@ -5,6 +5,22 @@ from prediction_helper import predict
 
 st.title('Health Insurance Cost Predictor')
 
+with st.expander("Click here to understand how to use the app"):
+    st.write("""
+    - **Age**: Enter your age between 18-100. Insurance premiums typically increase with age due to higher health risks.
+    - **Number of Dependants**: Enter the number of people who are financially dependent on you. More dependants may increase the insurance premium.
+    - **Income in Lakhs**: Your annual income in lakhs (₹). Higher income can indicate the ability to choose more premium insurance plans.
+    - **Genetical Risk**: Rate from 0 to 5 based on your family health history. A higher genetical risk increases the likelihood of higher premiums.
+    - **Insurance Plan**: Choose between Bronze, Silver, or Gold. Gold plans typically offer the most coverage but are also the most expensive.
+    - **Employment Status**: Select your current employment type. Salaried, self-employed, and freelancers may have different access to corporate health insurance schemes.
+    - **Gender**: Choose between Male and Female. Gender can impact insurance premiums due to different health risk factors.
+    - **Marital Status**: Choose your marital status. Married individuals may have different insurance needs, which can influence premiums.
+    - **BMI Category**: Choose your BMI category (Normal, Obesity, Overweight, or Underweight). A higher BMI may increase the premium due to related health risks.
+    - **Smoking Status**: Choose your smoking status (No Smoking, Regular, or Occasional). Regular smokers usually pay higher premiums due to smoking-related health risks.
+    - **Region**: Select the region where you live (Northwest, Southeast, Northeast, or Southwest). Premiums can vary by region due to differences in health care costs.
+    - **Medical History**: Choose your medical history from a list of conditions. If you have pre-existing conditions like diabetes or high blood pressure, it will increase your premium.
+    """)
+
 categorical_options = {
     'Gender': ['Male', 'Female'],
     'Marital Status': ['Unmarried', 'Married'],
