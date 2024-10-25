@@ -1,6 +1,6 @@
 # Health Premium Prediction Model
 
-This project implements a **Health Premium Prediction Model** that predicts insurance premium amounts for different age groups. The project uses **Multiple Linear Regression** for the "age <= 25" group and **XGBoost with Random Search Tuning** for the "age > 25" group. A web interface is built with **Streamlit** where users can input personal and medical attributes to estimate their insurance premiums.
+This project implements a **Health Premium Prediction Model** that predicts insurance premium amount. The project uses **Multiple Linear Regression** for the "age <= 25" group and **XGBoost with Random Search Tuning** for the "age > 25" group. A web interface is built with **Streamlit** where users can input personal and medical attributes to estimate their insurance premiums.
 
 ## 1. Project Overview
 
@@ -56,10 +56,7 @@ streamlit run main.py
 - Numerical features are scaled using **StandardScaler** for uniformity and model performance.
 
 ### Models:
-- **"age <= 25" Group:** For this group, the best model is **Multiple Linear Regression**, achieving a score of **98.87%**.
-- **"age > 25" Group:** For this group, the best model is **XGBoost with Random Search Tuning**, achieving a score of **99.70%**.
-
-The models are designed to estimate health premiums based on the provided features and yield accurate predictions for various age groups.
+The models are designed to estimate health premiums based on the provided features and yield accurate prediction.
 
 ### Feature Scaling:
 The input data is scaled using **StandardScaler** before feeding it to the model to ensure uniformity and improve performance.
