@@ -17,7 +17,7 @@ The repository is structured as follows:
 - `ml_premium_prediction_young_with_gr.ipynb` — Jupyter notebook for the "age <= 25" group, including data exploration, preprocessing, and model training
 - `ml_premium_prediction_rest_with_gr.ipynb` — Jupyter notebook for the "age > 25" group, including data exploration, preprocessing, and model training
 - `artifacts/` — Directory containing model artifacts:
-  - `model_young.joblib` — Serialized model for the "age <= 25r" group
+  - `model_young.joblib` — Serialized model for the "age <= 25" group
   - `model_rest.joblib` — Serialized model for the "age > 25" group
   - `scaler_young.joblib` — Scaler for the "age <= 25r" group
   - `scaler_rest.joblib` — Scaler for the "age > 25" group
@@ -47,3 +47,57 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 
 streamlit run main.py
+```
+
+## 5. Modeling Approach
+
+### Preprocessing:
+- Missing values are handled, and categorical features are encoded.
+- Numerical features are scaled using **StandardScaler** for uniformity and model performance.
+
+### Models:
+- **"age <= 25" Group:** For this group, the best model is **Multiple Linear Regression**, achieving a score of **98.87%**.
+- **"age > 25" Group:** For this group, the best model is **XGBoost with Random Search Tuning**, achieving a score of **99.70%**.
+
+The models are designed to estimate health premiums based on the provided features and yield accurate predictions for various age groups.
+
+### Feature Scaling:
+The input data is scaled using **StandardScaler** before feeding it to the model to ensure uniformity and improve performance.
+
+## 6. Results
+
+The models performed with high accuracy for both the "age <= 25" and "age > 25" groups:
+
+- **"age <= 25" Group:**
+  - **Model:** Multiple Linear Regression
+  - **Score:** 98.87%
+  
+- **"age > 25" Group:**
+  - **Model:** XGBoost with Random Search Tuning
+  - **Score:** 99.70%
+
+### Key outputs from the model include:
+- **Predicted Premium:** The estimated health insurance premium based on personal and medical attributes.
+- **Group:** Indicates whether the applicant belongs to the "age <= 25" or "age > 25" group.
+
+## 7. Usage
+
+Users can run the **Streamlit** app locally, input their information (age, BMI, smoking habits, etc.), and receive the estimated premium instantly.
+
+### To use the model:
+
+1. Run the Streamlit app:
+   ```bash
+   streamlit run main.py
+   ```
+
+Enter the required inputs into the web form.
+
+View the results for:
+
+- **Predicted Premium**
+
+## 8. Contributions
+
+We welcome contributions from the community! If you'd like to improve the model or add new features, feel free to fork this repository and submit a pull request.
+
