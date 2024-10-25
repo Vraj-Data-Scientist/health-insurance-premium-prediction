@@ -19,7 +19,7 @@ The repository is structured as follows:
 - `artifacts/` — Directory containing model artifacts:
   - `model_young.joblib` — Serialized model for the "age <= 25" group
   - `model_rest.joblib` — Serialized model for the "age > 25" group
-  - `scaler_young.joblib` — Scaler for the "age <= 25r" group
+  - `scaler_young.joblib` — Scaler for the "age <= 25" group
   - `scaler_rest.joblib` — Scaler for the "age > 25" group
 
 ## 3. Features
