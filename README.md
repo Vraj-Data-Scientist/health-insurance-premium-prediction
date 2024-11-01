@@ -1,4 +1,4 @@
-# Health Premium Prediction Model
+# Health Premium Cost Prediction Model
 
 This project implements a **Health Premium Prediction Model** that predicts insurance premium amount. The project uses **Multiple Linear Regression** for the "age <= 25" group and **XGBoost with Random Search Tuning** for the "age > 25" group. A web interface is built with **Streamlit** where users can input personal and medical attributes to estimate their insurance premiums.
 
