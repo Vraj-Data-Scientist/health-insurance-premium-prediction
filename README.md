@@ -80,7 +80,6 @@ The models performed with high accuracy for both the "age <= 25" and "age > 25" 
 
 ### Key outputs from the model include:
 - **Predicted Premium:** The estimated health insurance premium based on personal and medical attributes.
-- **Group:** Indicates whether the applicant belongs to the "age <= 25" or "age > 25" group.
 
 ## 7. Usage
 
