@@ -98,9 +98,7 @@ View the results for:
 
 - **Predicted Premium**
 
-## 8. Contributions
 
-We welcome contributions from the community! If you'd like to improve the model or add new features, feel free to fork this repository and submit a pull request.
 
 ## Dataset Citation
 This project uses a dataset provided by Codebasics as part of the Codebasics Data Science Bootcamp. The dataset is not included in this repository due to usage restrictions.
